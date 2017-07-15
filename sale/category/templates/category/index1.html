@@ -1,0 +1,10 @@
+{% extends 'category/base.html' %}
+{% block title %}TAC Items{% endblock %}
+{% block body %}
+
+<ul>
+        {% for item in all_items %}
+        <li> <a href="/tac/{{ item.id }}">{{ item.item_name}}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
